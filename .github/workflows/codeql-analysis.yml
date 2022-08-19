@@ -80,4 +80,4 @@ jobs:
           USER: ${{ secrets.USER }}
           WAREHOUSE: ${{ secrets.WAREHOUSE }}
       run:  |
-        nbdev_test_nbs
+        env
