@@ -80,4 +80,4 @@ jobs:
           SN_USER: ${{ secrets.SN_USER }}
           WAREHOUSE: ${{ secrets.WAREHOUSE }}
       run:  |
-        env
+        echo "$SNPASS"
