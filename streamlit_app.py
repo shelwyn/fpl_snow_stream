@@ -5,7 +5,8 @@ import altair as alt
 import os
 
 sn_user = os.environ['USER']
-sn_password = os.environ['SNPASS']
+#sn_password = os.environ['SNPASS']
+sn_password = "Stevo@#2012!"
 sn_account = os.environ['ACCOUNT']
 sn_warehouse = os.environ['WAREHOUSE']
 sn_database = os.environ['DATABASE']
