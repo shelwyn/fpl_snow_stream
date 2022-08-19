@@ -3,7 +3,7 @@ import snowflake.connector
 import streamlit as st
 import altair as alt
 
-conn = snowflake.connector.connect(user='shelwyn',password='Stevo@#2012!',account='lksupym-sm39588',warehouse='COMPUTE_WH',database='ENGLISH_PREMIER_LEAGUE',schema='PLAYER_DATA')
+conn = snowflake.connector.connect(user=os.environ['USER'],password=os.environ['PASSWORD'],account=os.environ['ACCOUNT'],warehouse=os.environ['WAREHOUSE'],database=os.environ['DATABASE'],schema=os.environ['SCHEMA'])
 sql=""
 
 html_img="<img src='https://shelwyn.in/images/fpl_small.png'>"
