@@ -10,7 +10,7 @@ import os
 # sn_warehouse = os.environ['WAREHOUSE']
 # sn_database = os.environ['DATABASE']
 # sn_schema = os.environ['SCHEMA']
-
+print("Starting")
 sn_user = "shelwyn"
 sn_password = "Stevo@#2012!"
 sn_account = "lksupym-sm39588"
