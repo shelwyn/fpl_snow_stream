@@ -5,7 +5,7 @@ import altair as alt
 import os
 from os import environ
 
-sn_user = {{ env.SN_USER }}
+sn_user = os.environ.get("SN_USER")
 sn_password = {{ env.SNPASS }}
 sn_account = {{ env.ACCOUNT }}
 sn_warehouse = {{ env.WAREHOUSE }}
