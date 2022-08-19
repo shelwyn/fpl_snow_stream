@@ -2,6 +2,7 @@ import pandas as pd
 import snowflake.connector
 import streamlit as st
 import altair as alt
+import os
 
 conn = snowflake.connector.connect(user=os.environ['USER'],password=os.environ['PASSWORD'],account=os.environ['ACCOUNT'],warehouse=os.environ['WAREHOUSE'],database=os.environ['DATABASE'],schema=os.environ['SCHEMA'])
 sql=""
