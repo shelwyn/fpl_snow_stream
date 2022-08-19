@@ -81,5 +81,5 @@ jobs:
           WAREHOUSE: ${{ secrets.WAREHOUSE }}
       run:  |
         echo "$SNPASS"
-        echo $SNPASS
+        echo "${{ env.SNPASS }}"
         echo ">>>>>>>>>>>"
