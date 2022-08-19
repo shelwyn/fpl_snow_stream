@@ -6,11 +6,11 @@ import os
 from os import environ
 
 sn_user = os.environ.get("SN_USER")
-sn_password = {{ env.SNPASS }}
-sn_account = {{ env.ACCOUNT }}
-sn_warehouse = {{ env.WAREHOUSE }}
-sn_database = {{ env.DATABASE }}
-sn_schema = {{ env.SCHEMA }}
+sn_password = os.environ.get("SNPASS")
+sn_account =  os.environ.get("ACCOUNT")
+sn_warehouse = os.environ.get("WAREHOUSE")
+sn_database =  os.environ.get("DATABASE")
+sn_schema =  os.environ.get("SCHEMA")
 
 sn_user = "shelwyn"
 sn_password = "Stevo@#2012!"
