@@ -81,3 +81,6 @@ jobs:
           WAREHOUSE: ${{ secrets.WAREHOUSE }}
       run:  |
         env
+    - name: "Run python script"
+      run: |
+          python streamlit_app.py
