@@ -12,12 +12,6 @@ sn_warehouse = os.environ.get("WAREHOUSE")
 sn_database =  os.environ.get("DATABASE")
 sn_schema =  os.environ.get("SCHEMA")
 
-sn_user = "shelwyn"
-sn_password = "Stevo@#2012!"
-sn_account = "lksupym-sm39588"
-sn_warehouse = "COMPUTE_WH"
-sn_database = "ENGLISH_PREMIER_LEAGUE"
-sn_schema = "PLAYER_DATA"
 
 conn = snowflake.connector.connect(user=sn_user,password=sn_password,account=sn_account,warehouse=sn_warehouse,database=sn_database,schema=sn_schema)
 sql=""
