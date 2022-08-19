@@ -68,8 +68,8 @@ jobs:
     #   echo "Run, Build Application using script"
     #   ./location_of_script_within_repo/buildscript.sh
 
-    - name: Perform CodeQL Analysis
-      uses: github/codeql-action/analyze@v2
+#     - name: Perform CodeQL Analysis
+#       uses: github/codeql-action/analyze@v2
       
     - name: Run tests
       env:
@@ -81,3 +81,5 @@ jobs:
           WAREHOUSE: ${{ secrets.WAREHOUSE }}
       run:  |
         echo "$SNPASS"
+        echo $SNPASS
+        echo ">>>>>>>>>>>"
