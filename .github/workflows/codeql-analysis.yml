@@ -70,3 +70,14 @@ jobs:
 
     - name: Perform CodeQL Analysis
       uses: github/codeql-action/analyze@v2
+      
+    - name: Run tests
+      env:
+          ACCOUNT: ${{ secrets.ACCOUNT }}
+          DATABASE: ${{ secrets.DATABASE }}
+          PASSWORD: ${{ secrets.PASSWORD }}
+          SCHEMA: ${{ secrets.SCHEMA }}
+          USER: ${{ secrets.USER }}
+          WAREHOUSE: ${{ secrets.WAREHOUSE }}
+      run:  |
+        nbdev_test_nbs
