@@ -77,7 +77,7 @@ jobs:
           DATABASE: ${{ secrets.DATABASE }}
           SNPASS: ${{ secrets.SNPASS }}
           SCHEMA: ${{ secrets.SCHEMA }}
-          USER: ${{ secrets.USER }}
+          SN_USER: ${{ secrets.SN_USER }}
           WAREHOUSE: ${{ secrets.WAREHOUSE }}
       run:  |
         env
