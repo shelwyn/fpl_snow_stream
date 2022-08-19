@@ -3,14 +3,15 @@ import snowflake.connector
 import streamlit as st
 import altair as alt
 import os
+from os import environ
 
-# sn_user = os.environ['SN_USER']
-# sn_password = os.environ['SNPASS']
-# sn_account = os.environ['ACCOUNT']
-# sn_warehouse = os.environ['WAREHOUSE']
-# sn_database = os.environ['DATABASE']
-# sn_schema = os.environ['SCHEMA']
-print("Starting")
+sn_user = os.environ['SN_USER']
+sn_password = os.environ['SNPASS']
+sn_account = os.environ['ACCOUNT']
+sn_warehouse = os.environ['WAREHOUSE']
+sn_database = os.environ['DATABASE']
+sn_schema = os.environ['SCHEMA']
+
 sn_user = "shelwyn"
 sn_password = "Stevo@#2012!"
 sn_account = "lksupym-sm39588"
