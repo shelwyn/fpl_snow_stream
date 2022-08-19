@@ -75,12 +75,9 @@ jobs:
       env:
           ACCOUNT: ${{ secrets.ACCOUNT }}
           DATABASE: ${{ secrets.DATABASE }}
-          PASSWORD: ${{ secrets.PASSWORD }}
+          SNPASS: ${{ secrets.SNPASS }}
           SCHEMA: ${{ secrets.SCHEMA }}
           USER: ${{ secrets.USER }}
           WAREHOUSE: ${{ secrets.WAREHOUSE }}
       run:  |
         env
-    - name: "Run python script"
-      run: |
-          python streamlit_app.py
