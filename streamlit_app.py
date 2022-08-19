@@ -5,12 +5,12 @@ import altair as alt
 import os
 from os import environ
 
-sn_user = ${{ env.SN_USER }}
-sn_password = ${{ env.SNPASS }}
-sn_account = ${{ env.ACCOUNT }}
-sn_warehouse = ${{ env.WAREHOUSE }}
-sn_database = ${{ env.DATABASE }}
-sn_schema = ${{ env.SCHEMA }}
+sn_user = {{ env.SN_USER }}
+sn_password = {{ env.SNPASS }}
+sn_account = {{ env.ACCOUNT }}
+sn_warehouse = {{ env.WAREHOUSE }}
+sn_database = {{ env.DATABASE }}
+sn_schema = {{ env.SCHEMA }}
 
 sn_user = "shelwyn"
 sn_password = "Stevo@#2012!"
