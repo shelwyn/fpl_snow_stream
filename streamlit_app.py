@@ -6,7 +6,7 @@ import os
 
 conn = snowflake.connector.connect(user=os.environ['USER'],password=os.environ['SNPASS'],account=os.environ['ACCOUNT'],warehouse=os.environ['WAREHOUSE'],database=os.environ['DATABASE'],schema=os.environ['SCHEMA'])
 sql=""
-
+#->
 html_img="<img src='https://shelwyn.in/images/fpl_small.png'>"
 st.sidebar.markdown(html_img, unsafe_allow_html=True)
 player_type = st.sidebar.selectbox('',['Select Player Type','All Players','Goalkeeper','Defender','Midfielder','Forward'])
