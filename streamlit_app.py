@@ -4,7 +4,7 @@ import streamlit as st
 import altair as alt
 import os
 
-# sn_user = os.environ['USER']
+# sn_user = os.environ['SN_USER']
 # sn_password = os.environ['SNPASS']
 # sn_account = os.environ['ACCOUNT']
 # sn_warehouse = os.environ['WAREHOUSE']
