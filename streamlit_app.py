@@ -4,7 +4,14 @@ import streamlit as st
 import altair as alt
 import os
 
-conn = snowflake.connector.connect(user=os.environ['USER'],password=os.environ['SNPASS'],account=os.environ['ACCOUNT'],warehouse=os.environ['WAREHOUSE'],database=os.environ['DATABASE'],schema=os.environ['SCHEMA'])
+sn_user = os.environ['USER']
+sn_password = os.environ['SNPASS']
+sn_account = os.environ['ACCOUNT']
+sn_warehouse = os.environ['WAREHOUSE']
+sn_database = os.environ['DATABASE']
+sn_schema = os.environ['SCHEMA']
+
+conn = snowflake.connector.connect(user=sn_user,password=sn_password,account=sn_account,warehouse=sn_warehouse,database=sn_database,schema=sn_schema)
 sql=""
 #->
 html_img="<img src='https://shelwyn.in/images/fpl_small.png'>"
